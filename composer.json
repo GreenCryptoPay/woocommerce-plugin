@@ -1,0 +1,13 @@
+{
+    "name": "greencryptopay/woocommerce-plugin",
+    "description": "Green Crypto Processing - payment gateway for WooCommerce.",
+    "authors": [
+        {
+            "name": "Developers team",
+            "email": "support@greencryptopay.com"
+        }
+    ],
+    "require": {
+        "greencryptopay/greencryptopay-php": "^1.0"
+    }
+}
