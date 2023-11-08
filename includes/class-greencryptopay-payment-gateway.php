@@ -102,12 +102,6 @@ class GreenCryptoPay_Payment_Gateway extends WC_Payment_Gateway
                 'description' => __('Specify the number of confirmations for to confirm the payment', 'greencryptopay'),
                 'default' => $this->get_option('number_of_confirmations', 3),
             ),
-            'request_signature' => array(
-                'title' => __('Request signature', 'greencryptopay'),
-                'type' => 'text',
-                'description' => __('Arbitrary string for request signature.', 'greencryptopay'),
-                'default' => $this->get_option('request_signature', md5(time() . random_bytes(10))),
-            ),
             'title' => array(
                 'title' => __('Title', 'greencryptopay'),
                 'type' => 'text',
@@ -130,6 +124,10 @@ class GreenCryptoPay_Payment_Gateway extends WC_Payment_Gateway
                 'type' => 'text',
                 'description' => __('Time for payment in minutes.', 'greencryptopay'),
                 'default' => __(10, 'greencryptopay'),
+            ),
+            'request_signature' => array(
+                'type' => 'hidden',
+                'default' => $this->get_option('request_signature', md5(time() . random_bytes(10))),
             ),
         );
     }

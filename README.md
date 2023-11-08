@@ -4,7 +4,7 @@ Tags: bitcoin, accept bitcoin, bitcoin woocommerce, bitcoin wordpress plugin, bi
 Requires PHP: 7.3\
 Requires at least: 6.3\
 Tested up to: 6.3\
-Stable tag: 1.0.1\
+Stable tag: 1.0.2\
 License: MIT\
 License URI: https://github.com/GreenCryptoPay/greencryptopay-php/blob/master/LICENSE
 
